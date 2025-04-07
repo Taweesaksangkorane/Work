@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class Display2 {
+public static void main(String[] args) {
+    
+    Scanner key = new Scanner(System.in);
+ System.out.print("Enter BASE number: ");
+ int x = key.nextInt();
+ System.out.print("Enter POWER number: ");
+ int n = key.nextInt();
+ System.out.println("Power of " + x + " by " + n + " is " + power(x, n)); }
+    
+ public static int power(int x, int n) {
+    if (n == 0){ return 1;}
+    else {return x*power(x, n - 1);}
+    }
+}
